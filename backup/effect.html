@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+<title>WE大会</title>
+<meta charset="utf-8" />
+<meta HTTP-EQUIV="pragma" CONTENT="no-cache">
+<meta HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate">
+<meta HTTP-EQUIV="expires" CONTENT="0">
+<meta name="keywords" content="WE大会" />
+<meta name="description" content="WE大会" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta http-equiv="Expires" content="-1" />
+<meta http-equiv="pragram" content="no-cache" />
+<meta name="sharecontent" data-msg-img="http://www.liveapp.cn/userfiles/video/tmp/14586/541bf5545a226.jpg" data-msg-title="WE大会" data-msg-content="这里没有商业或者公司竞争,只有前沿的科学思想和最新技术，还有天马行空般的想象力。" data-msg-callBack="" data-line-img="http://www.liveapp.cn/userfiles/video/tmp/14586/541bf55b2dab0.jpg" data-line-title="WE大会" data-line-callBack=""/> 
+
+    <link rel="stylesheet" href="./css/parallax.css">
+    <link rel="stylesheet" href="./css/parallax-animation.css">
+    <link rel="stylesheet" type="text/css" href="./css/we.css">
+    <link rel="stylesheet" type="text/css" href="./css/effect.css">
+</head>
+<body class="app">
+<div id="app-loading" class="app-loading z-hide">
+    <div class="cycleWrap">
+        <span class="cycle cycle-1"></span>
+        <span class="cycle cycle-2"></span>
+        <span class="cycle cycle-3"></span>
+        <span class="cycle cycle-4"></span>
+    </div>
+    <div class="lineWrap">
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+    </div>
+</div>
+<div class="light"></div>
+<section class="pages">
+    <section class="page page-we-01">
+        <section class="page-content">
+            <p class="we-font font-01" data-animation="slideToTop" data-duration="1000">这里没有商业或者公司竞争</p>
+            <p class="we-font font-02" data-animation="slideToTop" data-delay="200" data-duration="1000">只有前沿的科学思想和最新技术，</p>
+            <p class="we-font font-03" data-animation="slideToTop" data-delay="400" data-duration="1000">还有天马行空般的想象力。</p>
+            <p class="we-font font-04" data-animation="slideToTop" data-delay="600" data-duration="1000">马化腾</p>
+            <p class="we-font font-05" data-animation="slideToTop" data-delay="800" data-duration="1000">腾讯公司首席执行官兼董事会主席</p>
+
+        </section>
+    </section>
+    <section class="page page-we-02">
+        <section class="page-content">
+            <h1 class="we-logo" data-animation="followSlide" data-duration="1000"></h1>
+            <p class="we-font font-06" data-animation="followSlide" data-delay="200" data-duration="1000">2014</p>
+            <p class="we-font font-07" data-animation="followSlide" data-delay="400" data-duration="1000">Nothing but the Future</p>
+            <div class="sign-box" data-animation="followSlide" data-delay="600" data-duration="1000"></div>
+            <a href="#" class="we-font font-08" data-animation="followSlide" data-delay="800" data-duration="1000">点击即刻触摸未来世界</a>
+        </section>
+    </section>
+</section>
+</section><a href="javascript:void(0);" class="u-guideTop z-move"></a>
+<footer class="app-footer">
+</footer>
+<section class="page-facade guest-pop hide">
+    <section class="page-content">
+        <a href="javascript:void(0);" class="u-guidePrev z-move">next</a>
+        <a href="javascript:void(0);" class="u-guideNext z-move">prev</a>
+        <div class="outer" id="slider">
+            <ul class="u_sper">
+                <li><span class="imgbox"><img src="img/pop_img.png" width="235px"></span></li>
+                <li><span class="imgbox"><img src="img/pop_img.png" width="235px"></span></li>
+                <li><span class="imgbox"><img src="img/pop_img.png" width="235px"></span></li>
+                <li><span class="imgbox"><img src="img/pop_img.png" width="235px"></span></li>
+                <li><span class="imgbox"><img src="img/pop_img.png" width="235px"></span></li>
+                <li><span class="imgbox"><img src="img/pop_img.png" width="235px"></span></li>
+                <li><span class="imgbox"><img src="img/pop_img.png" width="235px"></span></li>
+            </ul>
+        </div>
+        <a href="#" class="we-btn popback"></a>
+    </section>
+</section>
+
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/parallax.js"></script>
+<script type="text/javascript" src="js/swipe.js"></script>
+
+<script>
+
+        
+</script>
+<script>
+    $(".light").click(function(){
+        var self=this;
+        $(this).addClass("on");
+        setTimeout(function(){
+            $(self).addClass("out");
+        },800)
+    })
+    $('.pages').parallax({
+        direction: 'vertical',  // horizontal (水平翻页)
+        swipeAnim: 'default',   // default (切换效果)
+        drag:      true,        // 是否允许拖拽 (若 false 则只有在 touchend 之后才会翻页)
+        loading:   false,       // 有无加载页
+        indicator: false,       // 有无指示点
+        arrow:     false,       // 有无指示箭头
+        /*
+         * 翻页后立即执行
+         * {int}        index: 第几页
+         * {DOMElement} element: 当前页节点
+         * {String}     directation: forward(前翻)、backward(后翻)、stay(保持原页)
+         */
+        onchange: function(index, element, direction) {
+            // code here...
+            // console.log(index, element, direction);
+        },
+        /*
+         * 横竖屏检测
+         * {String}     orientation: landscape、protrait
+         */
+        orientationchange: function(orientation) {
+            // console.log(orientation);
+        }
+    });
+
+
+
+    var slider =
+      Swipe(document.getElementById('slider'), {
+        auto: 3000,
+        continuous: true,
+        callback: function(pos) {
+
+          // var i = bullets.length;
+          // while (i--) {
+          //   bullets[i].className = ' ';
+          // }
+          // bullets[pos].className = 'on';
+
+        }
+      });
+
+    $('.popback').on('touchend', function(e) {
+        $('.guest-pop').addClass("hide");
+    });
+</script>
+<script src="js/smoke.js"></script>
+<!-- <script type="text/javascript" src="js/init.min.js?ver=2.5"></script> -->
+
+</body>
+</html>

@@ -1,0 +1,402 @@
+@charset "utf-8";
+html,body{overflow:hidden;position:relative;}
+.page-content{height:100%;}
+.hide{
+	display:none;
+}
+.we-font,
+.we-logo,
+.we-icon,.we-icon i,
+.popback,
+.we-btn,
+.we-cont{
+	display:inline-block;
+	background:url(../img/we_sprite@2x.png) no-repeat;background-size:272px auto;
+	text-indent:-999em;width:272px;overflow:hidden;margin:0;
+	position:absolute;left:50%;margin-left:-136px;
+}
+.font-01,
+.font-02,
+.font-03,
+.font-04,
+.font-05{
+	height:18px;
+}
+.font-01{background-position:0 0;top:20%;}
+.font-02{background-position:0 -20px;top:30%;}
+.font-03{background-position:0 -40px;top:40%;}
+.font-04{background-position:0 -60px;top:60%;}
+.font-05{background-position:0 -80px;top:65%;}
+
+.font-06{height:25px;background-position:0 -182px;top:26%;}
+.font-07{height:24px;background-position:0 -220px;top:33%;}
+.font-08{height:20px;background-position:0 -244px;top:80%;}
+
+.font-09{height:25px;background-position:0 -264px;top:13%;}
+.font-10{height:30px;background-position:0 -291px;top:19%;}
+.font-11{height:20px;background-position:0 -356px;top:43%;}
+.font-12{height:20px;background-position:0 -378px;top:63%;}
+
+.font-13{height:26px;background-position:0 -539px;top:10%;}
+.font-14{height:26px;background-position:0 -566px;top:17%;}
+.font-15{height:14px;background-position:0 -592px;top:35%;}
+.font-16{height:14px;background-position:0 -607px;top:40%;}
+.font-17{height:14px;background-position:0 -622px;top:45%;}
+.font-18{height:11px;background-position:0 -637px;top:80%;}
+.font-19{height:11px;background-position:0 -649px;top:84%;}
+.font-20{height:11px;background-position:0 -661px;top:88%;}
+
+.font-empty{background:0;top:5%;height:15px;}
+.font-empty .timebox{text-indent:0;position:absolute;left:50px;color:#e59b11;font-size:19px;line-height:13px;font-family:"MicroSoft YaHei";}
+.font-21{width:42px;height:15px;background-position:0 -673px;left:0;margin:0;}
+.font-22{width:132px;height:15px;background-position:-44px -673px;left:auto;right:0;margin:0;}
+.font-23{height:15px;background-position:0 -689px;bottom:40px;}
+
+
+.we-funcs{position:absolute;top:10%;left:0;right:0;}
+.we-func{position:absolute;background:url(../img/we_sprite2@2x.png) no-repeat;background-size:311px 74px; width:74px;height:74px;left:50%;top:0;}
+.logo-w{background-position:0 0;margin-left:-77px;}
+.logo-w.on{background-position:-79px 0;}
+.logo-e{background-position:-158px 0;margin-left:3px;}
+.logo-e.on{background-position:-237px 0;}
+
+/* S 提交分享页 */
+.result-title{color:#e69c11;font-size:30px;position:absolute;top:10%;left:0;right:0;font-weight:100;margin:0;}
+.font-24{height:17px;background-position:0 -705px;top:20%;}
+.font-25{height:10px;background-position:0 -723px;top:30%;}
+.font-26{width:30px;height:15px;background-position:-182px -673px;top:11px;left:42px;margin:0;}
+.font-27{width:30px;height:15px;background-position:-214px -673px;top:11px;left:42px;margin:0;}
+.font-28{height:29px;background-position:0 -466px;bottom:35px;}
+.font-32{height:12px;background-position:0 -779px;bottom:35px;}
+.we-form{position:absolute;top:40%;left:0;right:0;text-align:left;}
+.we-form .form-item{position:relative;height:58px;margin:0 auto;width:320px;}
+.we-form .form-item input{background-color:#fff;border:0;height:36px;width:190px;margin-left:88px;font-size:15px;text-indent:10px;}
+.btn-share{width:145px;height:42px;background-position:-44px -422px;top:70%;margin-left:-72px;}
+/* E 提交分享页 */
+
+/* S 购票页 */
+.font-29{height:20px;background-position:0 -734px;top:50%;}
+.fade-el{-webkit-animation: fade 3s infinite ease-in-out;}
+/*.font-29 i{position: absolute;top:0px;left:0px;content:"";width: 170px;height:22px;}*/
+
+.font-30{height:11px;background-position:0 -755px;top:88%;}
+.font-31{height:11px;background-position:0 -767px;top:92%;}
+.icon-hand{width:31px;height:31px;background-position:-214px -422px;-webkit-animation: hand 1s infinite ease-in-out;}
+.cont-hand{height:31px;top:50%;margin-left:50px;margin-top:40px;overflow: visible;background: none;}
+@-webkit-keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .6;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@-webkit-keyframes hand {
+  0% {
+    -webkit-transform: translateY(00px);
+  }
+  50% {
+    -webkit-transform:  translateY(-10px);
+  }
+  100%{
+    -webkit-transform:  translateY(0px);
+  }
+}
+/* E 购票页 */
+
+.we-logo{
+	height:80px;background-position:0 -100px;top:7%;
+}
+.icon-clock{
+	height:33px;background-position:0 -321px;
+}
+.icon-clock i{height:2px;background-position:-115px -354px;width: 9px;position: absolute;top:16px;left:133px;margin:0px;-webkit-animation: clock 2s infinite ease-in-out;-webkit-transform-origin:-2px;}
+.icon-clock.clock-02 i{-webkit-animation-delay:.8s;}
+@-webkit-keyframes clock {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  20% {
+    -webkit-transform:  rotate(360deg);
+  }
+  100%{
+    -webkit-transform:  rotate(360deg);
+  }
+}
+.clock-01{top:33%;}
+.clock-02{top:53%;}
+
+
+.guest-title{height:20px;background-position:0 -400px;top:5%;}
+
+.guest-list{
+	position:absolute;top:15%;width:280px;left:50%;margin-left:-140px;
+}
+.guest-list .list-item{
+	float:left;width:50%;height:135px;
+}
+.guest-list .list-item img{
+	width:100px;height:100px;
+}
+.guest-list .item-name{display:block;font-size:10px;color:#fff;}
+
+.app{
+	background:url(../img/bg.jpg?00) no-repeat;background-size:100% 100%;
+    /*background:#000;*/
+	text-align:center;
+}
+
+.btn-stargame{width:145px;height:42px;background-position:0 -496px;top:60%;margin-left:-77px;}
+
+.guest-pop{
+	position:absolute;left:0;top:0;bottom:0;right:0;z-index:10000;background-color:rgba(0,0,0,0.8);overflow:hidden;
+}
+.guest-pop.hide{-webkit-transform:translateX(100%);display: block;}
+.guest-pop ul{
+	top:0;bottom:0;z-index:0;
+}
+.guest-pop li{
+	position:relative;
+	height:100%;line-height:100%;overflow:hidden;vertical-align:middle;
+}
+.guest-pop .imgbox{
+	position:absolute;left:50%;top:5%;
+
+}
+.guest-pop .imgbox .info{color:#bababa;font-size: 11px;line-height: 18px;text-align: left;width: 280px;margin-left:-140px;}
+.guest-pop .imgbox .info h3{font-size: 13px;line-height: 16px;text-align: center;padding:15px 0px 10px;}
+.guest-pop .imgbox .info .title{font-size: 13px;line-height: 16px;text-align: center;padding-bottom:10px;}
+.guest-pop li img{
+	position:relative;left:-50%;
+}
+.guest-pop .outer{
+	position:absolute;left:0;top:0;bottom:0;right:0;z-index:2;
+}
+.guest-pop .popback{
+	position:absolute;bottom:12px;left:50%;z-index:10;
+	width:42px;height:42px;margin:0 0 0 -21px;
+	background-position:0 -422px;
+
+}
+.guest-pop .popback:after{
+    position: absolute;
+    width: 100%;height:100%;
+    padding:20px;left:-20px;top:-20px;
+    content:"";
+    display: block;
+}
+
+
+.u-guideTop {
+    width: 20px;
+    height: 25px;
+    background: url(../img/units-icons.png) -33px 0;
+    background-size:74px 28px;
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    margin-left: -10px;
+    display: block;
+    z-index: 9998
+}
+
+.u-guideTop.z-move {
+    -webkit-animation: guideTop 1.5s infinite
+}
+
+@-webkit-keyframes guideTop {
+    0% {
+        -webkit-transform: translateY(42px);
+        opacity: 0
+    }
+
+    60% {
+        -webkit-transform: translateY(12px);
+        opacity: 1
+    }
+
+    100% {
+        -webkit-transform: translateY(0px);
+        opacity: 0
+    }
+}
+
+.u-guideNext,.u-guidePrev {
+    text-decoration: none;
+    position: absolute;
+    top: 5%;
+    z-index: 9998;
+    background: url(../img/sd-i.png) no-repeat;
+    background-size:100% 100%;
+    display: block;
+    width: 18px;
+    height: 37px;
+    text-indent: 9999px;
+    margin-top:60px;
+}
+
+.u-guidePrev {
+    left:38px
+}
+
+.u-guideNext {
+    right:38px;
+    -webkit-transform: rotateZ(180deg);
+
+}
+.u-guideNext:after,.u-guidePrev:after{
+    position: absolute;content:"";
+    display: block;
+    width: 100%;
+    height:100%;
+    padding: 20px;
+    left:-20px;
+    top:-20px;
+}
+.u-guidePrev.z-move {
+    /*-webkit-animation: guidePrev 1.5s infinite*/
+}
+
+.u-guideNext.z-move {
+    /*-webkit-animation: guideNext 1.5s infinite*/
+}
+
+@-webkit-keyframes guidePrev {
+    0%,20% {
+        -webkit-transform: translateX(0px)
+    }
+
+    35% {
+        -webkit-transform: translateX(12px)
+    }
+
+    50% {
+        -webkit-transform: translateX(-20px)
+    }
+
+    65% {
+        -webkit-transform: translateX(0px)
+    }
+
+    80% {
+        -webkit-transform: translateX(-12px)
+    }
+
+    100% {
+        -webkit-transform: translateX(0px)
+    }
+}
+
+@-webkit-keyframes guideNext {
+    0%,20% {
+        -webkit-transform: translateX(0px) rotateZ(180deg)
+    }
+
+    35% {
+        -webkit-transform: translateX(-12px) rotateZ(180deg)
+    }
+
+    50% {
+        -webkit-transform: translateX(20px) rotateZ(180deg)
+    }
+
+    65% {
+        -webkit-transform: translateX(0px) rotateZ(180deg)
+    }
+
+    80% {
+        -webkit-transform: translateX(12px) rotateZ(180deg)
+    }
+
+    100% {
+        -webkit-transform: translateX(0px) rotateZ(180deg)
+    }
+}
+
+.page-facade .outer {
+    position: relative;z-index:4;
+    height: 100%;
+    overflow: hidden
+}
+
+.page-facade ul {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 20000px
+}
+
+.page-facade li {
+    float: left;
+    width: 320px;
+    text-align: center
+}
+
+.u-maskLayer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.7);
+    opacity: 0;
+    -webkit-transition: all .5s;
+    z-index: 9999
+}
+.u-maskLayer img{
+	width:100%;height:auto;
+}
+
+.u-maskLayer.z-show,.u-maskLayer.z-showing {
+    opacity: 1
+}
+
+.u-maskLayer-close {
+    width: 100px;
+    height: 100px;
+    background: rgba(255,0,0,.6);
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    -webkit-transition: all .6s;
+    -webkit-transform: translate(100%,-100%);
+    z-index: 99999
+}
+
+.u-maskLayer-close::after,.u-maskLayer-close::before {
+    width: 42px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 2px;
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 35px;
+    left: 15px
+}
+
+.u-maskLayer-close::after {
+    -webkit-transform: rotateZ(45deg)
+}
+
+.u-maskLayer-close::before {
+    -webkit-transform: rotateZ(-45deg)
+}
+
+.u-maskLayer.z-show .u-maskLayer-close {
+    -webkit-transform: translate(0%,0)
+}
+
+@media screen and (max-width: 450px) {
+    .guest-title{top:2%;}
+
+    .guest-list{top:10%;}
+
+    .guest-list .item-name{line-height: 14px;}
+    .guest-list .list-item{height: 126px;}
+}
