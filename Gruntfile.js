@@ -14,15 +14,13 @@ module.exports = function(grunt){
       "Public/js/zepto/cookie.js"
     ];
     var module=[
-      "Public/js/source/fastclick.js",
-      "Public/js/source/prefixfree.min.js",
       "Public/js/source/jquery.keyframes.js",
       "Public/js/source/parallax.js",
       "Public/js/source/swipe.js",
-      "Public/js/source/transform.js",
       "Public/js/source/page.js",
       "Public/js/source/bg.js",
-      "Public/js/source/game.js"
+      "Public/js/source/game.js",
+      "Public/js/source/share.js"
     ]
     grunt.initConfig({
       pkg:pkg,

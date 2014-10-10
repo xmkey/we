@@ -18,20 +18,36 @@
 <meta name="sharecontent" data-msg-img="http://www.liveapp.cn/userfiles/video/tmp/14586/541bf5545a226.jpg" data-msg-title="WE大会" data-msg-content="这里没有商业或者公司竞争,只有前沿的科学思想和最新技术，还有天马行空般的想象力。" data-msg-callBack="" data-line-img="http://www.liveapp.cn/userfiles/video/tmp/14586/541bf55b2dab0.jpg" data-line-title="WE大会" data-line-callBack=""/> 
 <script type="text/javascript">
   var PUBLIC="__PUBLIC__";
+  var ROOT="__ROOT__";
+  var APP="__APP__";
 </script>  
 <link rel="stylesheet" href="__PUBLIC__/css/main.css?3">
   
 
 </head>
 <body class="app">
-<div class="app-loading">
+ 
+<!-- <div class="app-loading">
   <div class="loading-screen">
     <div></div>
     <div></div>
     <div></div>
     <div></div>
   </div>
-</div>
+</div> -->
+<div class="app-loading">
+    <div class="loading-bubbles">
+      <div class="bubble-container">
+        <div class="bubble"></div>
+      </div>
+      <div class="bubble-container">
+        <div class="bubble"></div>
+      </div>
+      <div class="bubble-container">
+        <div class="bubble"></div>
+      </div>
+    </div>
+  </div>
 
 
 <!-- <div id="app-loading" class="app-loading z-hide">
@@ -60,26 +76,34 @@
 <div class="motion">
 <section class="pages">
 
- <section class="page page-we-01">
+ <!-- <section class="page page-we-01">
     <section class="page-content">
-      <p class="we-font font-01" data-animation="zoom"  data-delay="0" data-duration="400">这里没有商业或者公司竞争</p>
-      <p class="we-font font-02" data-animation="zoom" data-delay="800" data-duration="400">只有前沿的科学思想和最新技术，</p>
-      <p class="we-font font-03" data-animation="zoom" data-delay="1600" data-duration="400">还有天马行空般的想象力。</p>
-      <p class="we-font font-04" data-animation="zoom" data-delay="2400" data-duration="400">马化腾</p>
-      <p class="we-font font-05" data-animation="zoom" data-delay="3200" data-duration="400">腾讯公司首席执行官兼董事会主席</p>
+      <p class="we-font font-01" data-animation="zoom2"  data-delay="200" data-duration="500" data-function="ease-out">这里没有商业或者公司竞争</p>
+      <p class="we-font font-02" data-animation="zoom2" data-delay="1500" data-duration="600"  data-function="ease-out">只有前沿的科学思想和最新技术，</p>
+      <p class="we-font font-03" data-animation="zoom2" data-delay="3000" data-duration="700"  data-function="ease-out">还有天马行空般的想象力。</p>
+      <p class="we-font font-04" data-animation="zoom2" data-delay="4600" data-duration="800"  data-function="ease-out">马化腾</p>
+      <p class="we-font font-05" data-animation="zoom2" data-delay="4600" data-duration="800"  data-function="ease-out">腾讯公司首席执行官兼董事会主席</p>
+
     </section>
-  </section>
+  </section> -->
   <section class="page page-we-02 page-home">
     <section class="page-content ">
-      <h1 class="we-logo"></h1>
-      <p class="we-font font-06" data-animation="slideToTop" data-delay="0" data-duration="400">2014</p>
-      <p class="we-font font-07" data-animation="slideToTop" data-delay="200" data-duration="400">Nothing but the Future</p>
-      <div class="sign-box" data-animation="slideToTop" data-delay="400" data-duration="600">
+      <h1 class="we-logo" data-animation="slideToTop" data-delay="0" data-duration="400"></h1>
+      <p class="we-font font-06" data-animation="slideToTop" data-delay="200" data-duration="400">2014</p>
+      <p class="we-font font-07" data-animation="slideToTop" data-delay="400" data-duration="400">Nothing but the Future</p>
+      <div class="sign-box" data-animation="slideToTop" data-delay="600" data-duration="600">
         
       </div>
-       
+
+      
+       <p class="we-font font-101" data-animation="zoom2" data-delay="800" data-duration="400">连接未来</p>
+       <!-- <p class="we-font font-102" data-animation="zoom2" data-delay="1100" data-duration="500">改变世界</p> -->
+       <p class="we-font font-04" data-animation="slideToTop" data-delay="1000" data-duration="800"  data-function="ease-out">马化腾</p>
+      <p class="we-font font-05" data-animation="slideToTop" data-delay="1000" data-duration="800"  data-function="ease-out">腾讯公司首席执行官兼董事会主席</p>
         <!-- <canvas id="transform" width="150" height="150"></canvas> -->
-      <!-- <div class="surface-container">
+    
+      <!-- <div class="surface-container"   data-animation="slideToTop" data-delay="400" data-duration="600">
+        <div class="inner">
       <div class="surface">
         <div class="point"></div>
         <div class="point"></div>
@@ -131,8 +155,9 @@
         <div class="point"></div>
         <div class="point"></div>
       </div>
+      </div>
       </div> -->
-      <div class="fade-el"><div class="we-font font-08" data-animation="slideToTop" data-delay="500" data-duration="800">点击即刻触摸未来世界</div></div>
+      <!-- <div class="fade-el"><div class="we-font font-08" data-animation="slideToTop" data-delay="500" data-duration="800">点击即刻触摸未来世界</div></div> -->
     </section>
     
     
@@ -228,14 +253,18 @@
       </div>
       <div class="we-cont cont-hand" data-animation="followSlide" data-delay="600" data-duration="700">
         <i class="we-icon icon-hand" ></i>
+        <p class="we-font font-104">马上点击购票</p>
       </div>
-      <p class="we-font font-30" data-animation="followSlide" data-delay="800" data-duration="700">马上点击购票艾迪票务乐百汇为本次大会指</p>
-      <p class="we-font font-31" data-animation="followSlide" data-delay="1000" data-duration="700">定合作伙伴</p>
+      <p class="we-font font-30" data-animation="followSlide" data-delay="800" data-duration="700">艾迪票务乐百汇为本次大会指定合作伙伴 </p>
+      <p class="we-font font-31" data-animation="followSlide" data-delay="1000" data-duration="700">设计机构：pinnadesign </p>
+      <!-- <p class="we-font font-103" data-animation="followSlide" data-delay="1000" data-duration="700">设计机构：pinnadesign </p> -->
       </a>
     </section>
   </section>
 </div>
 </section><a href="javascript:void(0);" class="u-guideTop z-move"></a>
+<div class="voice-cont"><div class="icon-voice"></div></div>
+
 <footer class="app-footer">
 </footer>
 <section class="page-facade guest-pop hide">
@@ -356,11 +385,15 @@
       </ul>
     </div>
     <a href="#" class="we-btn popback"></a>
+    
   </section>
 </section>
 
+<audio src="__PUBLIC__/audio/bg.mp3?0" id="audio-bg" preload="auto" autoplay="autoplay" loop="loop" ></audio>
+<!-- <audio src="__PUBLIC__/audio/effect1.mp3" id="audio-effect1" preload="auto"></audio> -->
+<script type="text/javascript" src="__PUBLIC__/js/zepto.min.js"></script>
 
-<script type="text/javascript" src="__PUBLIC__/js/zepto.min.js?3"></script>
+<script type="text/javascript" src="__PUBLIC__/js/main.js?3"></script>
 <script type="text/javascript">
 
   function loadImage(url, callback) {
@@ -382,14 +415,20 @@
    loadImage(images[i], function(img) {
        count++;
        if(count==images.length){
-         $(".app").addClass("ready");
+          $(".app").addClass("ready");
+           window.page();
+           setTimeout(function(){
+              window.bg_start();
+           },500)
+
+         
+         
        }
    });
   }
 
   
 </script>
-<script type="text/javascript" src="__PUBLIC__/js/main.js"></script>
 
 
 </body>

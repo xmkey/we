@@ -32,6 +32,9 @@
 // window.onload = function() {
 //     setTimeout(start, 200);
 // };
+
+
+
 var oldX=0;
 var oldY=0;
 function deviceMotionHandler(eventData){
@@ -39,8 +42,8 @@ function deviceMotionHandler(eventData){
     var acceleration = eventData.accelerationIncludingGravity; 
     var x=Math.round(acceleration.x)*3;
     var y=-Math.round(acceleration.y)*3;
-    if(Math.abs(oldX-x)>4||Math.abs(oldY-y)>4){
-        var translate="translate("+x+"px,"+y+"px)";
+    if(Math.abs(oldX-x)>4){
+        var translate="translateX("+x+"px)";
         $(".motion").css({
             "-webkit-transform":translate,
 
@@ -316,7 +319,7 @@ var url=document.location.href;
 var flag=true;
 var test=true;
 var n=parseInt((url.indexOf('n=')!=-1)?url.substring(url.indexOf('n=')+2,((url.substring(url.indexOf('n=')+2,url.length)).indexOf('&')!=-1)?url.indexOf('n=')+2+(url.substring(url.indexOf('n=')+2,url.length)).indexOf('&'):url.length):512);
-var n=256;
+var n=200;
 var w=0;
 var h=0;
 var x=0;
@@ -325,7 +328,7 @@ var z=0;
 var star_color_ratio=0;
 var star_x_save,star_y_save;
 var star_ratio=256;
-var star_speed=4;
+var star_speed=7;
 var star_speed_save=0;
 var star=new Array(n);
 var color;
@@ -428,7 +431,37 @@ function resize()
     init();
     }
 // if(window.addEventListener) window.addEventListener('DOMMouseScroll',mouse_wheel,false);
-start()
+// start()
+
+window.bg_start=function(){
+  start();
+  // var audio_bg=document.getElementById('audio-bg');
+  var audio_bg=new Audio(PUBLIC+"/audio/bg.mp3");
+  // console.log(audio_bg)
+  isAudioFirst=true;
+  if(audio_bg){
+  audio_bg.play();
+  $(document).on("touchstart",function(){
+    if(isAudioFirst){
+      audio_bg.play();
+    }
+    isAudioFirst=false;
+    
+  });
+  $(".voice-cont").tap(function(){
+    var icon=$(this).find(".icon-voice");
+    if(icon.hasClass("stop")){
+      audio_bg.play();
+      icon.removeClass("stop");
+    }else{
+      audio_bg.pause();
+      icon.addClass("stop");
+    }
+    
+  })
+}
+}
+
 
 
 }(Zepto)

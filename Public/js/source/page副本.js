@@ -1,6 +1,7 @@
 !function($){
+  window.page=function(){
   function preventDefault(e){
-   
+    
     e.preventDefault();
     return false;
   }
@@ -12,7 +13,14 @@
     $(".u-guideTop").hide();
     window.isHome=true;
   }
-  $(".light").on("click",function(){
+
+  $(".light").on("touchend",function(){
+    var audio_effect1=document.getElementById('audio-effect1');
+
+    if(audio_effect1){
+      audio_effect1.play();
+    }
+   
     var self=this;
     var screenW=$(document.body).width(),
         screenH=$(document.body).height();
@@ -29,15 +37,13 @@
     })
     var homeIndex=$(".pages .page").index($(".page-home"));
     var timeIndex=$(".pages .page").index($(".page-time"));
-    window.curPage=timeIndex;
+    // window.curPage=timeIndex;
+
     // $(".pages").css({"-webkit-transition-duration":"0","transition-duration":"0"})
     setTimeout(function(){
       // $(self).closest(".page").find(".page-front").addClass("hide");
       // $(self).closest(".page").find(".page-back").addClass("show");
-      
-
-      
-      window.curPage=timeIndex;
+      // window.curPage=timeIndex;
       var pageHeight  = $(window).height(); 
       $(".pages").css({'-webkit-transform': 'matrix(1, 0, 0, 1, 0, -' + pageHeight*timeIndex + ')'});
       $(".pages").css({"-webkit-transition-duration":"400ms","transition-duration":"400ms"})
@@ -50,12 +56,17 @@
           "opacity":0
         });
         setTimeout(function(){
+          window.slideTo(timeIndex);
+        },1000)
+        setTimeout(function(){
           $(self).hide();
+
           $(self).find(".inner").css({
             "-webkit-transform":"scale(1) rotate(0deg)",
             "-webkit-transition-duration":"0.5s"
           });
           $(".pages").off("touchmove",preventDefault);
+          $("body").off("touchmove",preventDefault);
           $(".u-guideTop").show();
           $('.page-back [data-animation]').each(function(index, element){
                 var $element    = $(element),
@@ -104,6 +115,8 @@
           $(".light").show();
           $(".u-guideTop").hide();
           $(".pages").on("touchmove",preventDefault);
+          $("body").on("touchmove",preventDefault);
+
           // setTimeout(function(){
 
 
@@ -209,4 +222,6 @@
   $(".u-guideNext").tap(function(){
     slider.next();
   })
+  }
+
 }(Zepto)

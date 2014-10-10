@@ -15,38 +15,38 @@ if (typeof Zepto === 'undefined') { throw new Error('Parallax.js\'s script requi
     
     $.keyframe.define([{
         name: 'slideToTop',
-        '0%': {'transform': 'translate3d(0, '+screenH+'px, 0)'},
-        '100%': {'transform': 'translate3d(0, 0px, 0)'}
+        '0%': {'-webkit-transform': 'translate3d(0, '+screenH+'px, 0)'},
+        '100%': {'-webkit-transform': 'translate3d(0, 0px, 0)'}
         }
     ]);
     $.keyframe.define([{
         name: 'slideToBottom',
-        '0%': {'transform': 'translate3d(0, -'+screenH+'px, 0)'},
-        '100%': {'transform': 'translate3d(0, 0px, 0)'}
+        '0%': {'-webkit-transform': 'translate3d(0, -'+screenH+'px, 0)'},
+        '100%': {'-webkit-transform': 'translate3d(0, 0px, 0)'}
         }
     ]);
     $.keyframe.define([{
         name: 'slideToLeft',
-        '0%': {'transform': 'translate3d( '+screenW+'px,0px, 0)'},
-        '100%': {'transform': 'translate3d(0, 0px, 0)'}
+        '0%': {'-webkit-transform': 'translate3d( '+screenW+'px,0px, 0)'},
+        '100%': {'-webkit-transform': 'translate3d(0, 0px, 0)'}
         }
     ]);
     $.keyframe.define([{
         name: 'slideToRight',
-        '0%': {'transform': 'translate3d( -'+screenW+'px,0px, 0)'},
-        '100%': {'transform': 'translate3d(0, 0px, 0)'}
+        '0%': {'-webkit-transform': 'translate3d( -'+screenW+'px,0px, 0)'},
+        '100%': {'-webkit-transform': 'translate3d(0, 0px, 0)'}
         }
     ]);
     $.keyframe.define([{
         name: 'followSlideToBottom',
-        '0%': {'transform': 'translate3d(0, -'+screenH+'px, 0)'},
-        '100%': {'transform': 'translate3d(0, 0px, 0)'}
+        '0%': {'-webkit-transform': 'translate3d(0, -'+screenH+'px, 0)'},
+        '100%': {'-webkit-transform': 'translate3d(0, 0px, 0)'}
         }
     ]);
     $.keyframe.define([{
         name: 'followSlideToTop',
-        '0%': {'transform': 'translate3d(0, '+screenH+'px, 0);'},
-        '100%': {'transform': 'translate3d(0, 0px, 0);'}
+        '0%': {'-webkit-transform': 'translate3d(0, '+screenH+'px, 0);'},
+        '100%': {'-webkit-transform': 'translate3d(0, 0px, 0);'}
         }
     ]);
 
@@ -164,7 +164,8 @@ if (typeof Zepto === 'undefined') { throw new Error('Parallax.js\'s script requi
     // ==============================
 
     function onStart(e) {
-
+        movePrevent=window.movePrevent;
+        // console.log(movePrevent)
         if (movePrevent === true) {
             event.preventDefault();
             return false;
@@ -202,20 +203,22 @@ if (typeof Zepto === 'undefined') { throw new Error('Parallax.js\'s script requi
     // ==============================
 
     function onMove(e) {
-
-        if(movePrevent === true || touchDown === false){
+        movePrevent=window.movePrevent;
+        if(movePrevent!==true){
+            if(movePrevent === true || touchDown === false){
+                event.preventDefault();
+                return false;
+            }
             event.preventDefault();
-            return false;
-        }
-        event.preventDefault();
-        options.direction === 'horizontal' ? endPos = e.pageX : endPos = e.pageY;
+            options.direction === 'horizontal' ? endPos = e.pageX : endPos = e.pageY;
 
-        addDirecClass();    // 添加方向类
+            addDirecClass();    // 添加方向类
 
-        if (options.drag && !isHeadOrTail()) { // 拖拽时调用
-            dragToMove();
+            if (options.drag && !isHeadOrTail()) { // 拖拽时调用
+                dragToMove();
+            }
+            stage = 2;
         }
-        stage = 2;
     }
 
 
@@ -235,7 +238,7 @@ if (typeof Zepto === 'undefined') { throw new Error('Parallax.js\'s script requi
 
         if (movePrevent === true || stage !== 2){
             // event.preventDefault();
-            // return false;
+            return false;
         } else {
             touchDown = false;
             options.direction === 'horizontal' ? endPos = e.pageX : endPos = e.pageY;
@@ -418,8 +421,10 @@ if (typeof Zepto === 'undefined') { throw new Error('Parallax.js\'s script requi
         }
 
         movePrevent = true;         // 动画过程中不可移动
+        window.movePrevent=true;
         setTimeout(function() {
             movePrevent = false;
+            window.movePrevent=false;
         }, 300);
     }
 
@@ -474,7 +479,6 @@ if (typeof Zepto === 'undefined') { throw new Error('Parallax.js\'s script requi
     // ==============================
 
     function animShow() {
-        console.log(1)
         $animateDom.css({
         	'-webkit-animation': 'none',
         	'display': 'none'	// 解决部分 Android 机型 DOM 不自动重绘的 bug
@@ -541,7 +545,7 @@ if (typeof Zepto === 'undefined') { throw new Error('Parallax.js\'s script requi
         .on('webkitAnimationEnd webkitTransitionEnd', '.pages', function() {
             curPage=window.curPage;
 
-			// if (direction !== 'stay') {
+			if (direction !== 'stay') {
                
 				setTimeout(function() {
 	                $(".back").hide().removeClass("back");
@@ -552,7 +556,7 @@ if (typeof Zepto === 'undefined') { throw new Error('Parallax.js\'s script requi
 	            $($pageArr.removeClass('current').get(curPage)).addClass('current');
 	            options.onchange(curPage, $pageArr[curPage], direction);  // 执行回调函数
 	            animShow();
-			// }
+			}
             
         });
 
@@ -614,7 +618,29 @@ if (typeof Zepto === 'undefined') { throw new Error('Parallax.js\'s script requi
 			options.orientationchange('landscape') 
 		} 	
     }, false);
+    
+ window.slideTo=function(index){
+        var pageHeight=$(window).height();
+        curPage=index;
+        direction='forward';
+        $(".pages").css({"-webkit-transition-duration":"0ms","transition-duration":"0ms"});
 
+        $(".pages").css({'-webkit-transform': 'matrix(1, 0, 0, 1, 0, -' + pageHeight*index + ')'});
+        // $(".pages").trigger('webkitAnimationEnd');
+
+        $($pageArr.removeClass('current').get(curPage)).addClass('current');
+        animShow();
+        
+        setTimeout(function(){
+          $(".pages").css({"-webkit-transition-duration":"400ms","transition-duration":"400ms"})
+        },300)
+        
+      }
+  window.moveTo=function(index){
+     curPage=index;
+    var pageHeight=$(window).height()
+    $(".pages").css({'-webkit-transform': 'matrix(1, 0, 0, 1, 0, -' + pageHeight*index + ')'});
+  }
 
 
 }(Zepto)

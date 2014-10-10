@@ -11,25 +11,34 @@
 .bg .cloud{background: url(../img/cloud.png) repeat-x 0px 0px;position: absolute;top:0%;left:0px;width:1000px;height:100%;background-size:500px 100%;-webkit-animation: cloud 300s infinite linear;z-index: 9;}
 .bg .cloud2{background-size: 1000px 200%;-webkit-animation: cloud 100s infinite linear;}
 .bg .cloud3{-webkit-animation: cloud2 200s infinite linear;-webkit-transform: translateX(-500px);}
-.page-home .sign-box {position: absolute;top:45%;left:50%;margin-left:-75px;z-index: 3;width: 300px;height:300px;margin-left:-150px;}
+.page-home .sign-box {position: absolute;top:45%;left:50%;margin-left:-75px;z-index: 3;width: 300px;height:300px;margin-left:-150px;text-align: center;}
 .page-home{/*perspective-origin: 5% -50%;
 perspective: 32em;*/
 font-size: 2.5em;}
-.surface-container{-webkit-transform: scale(.5);
-position: absolute;perspective-origin: 5% -50%;
-perspective: 32em;
+.surface-container{
+position: absolute;
 top: 40%;
 left: 1px;
 width: 100%;
 height: 180px;}
+.surface-container .inner{-webkit-transform: scale(.5);
+position: absolute;perspective-origin: 5% -50%;
+perspective: 32em;
+top: 0%;
+left: 0px;
+width: 100%;
+height: 100%;}
 
 .app .app-loading{position: absolute;top:0px;left:0px;width: 100%;height: 100%;-webkit-box-orient: horizontal;
 -webkit-box-pack: center;
--webkit-box-align: center;display: -webkit-box;background: #000;}
-.app .bg{display: none}
+-webkit-box-align: center;display: -webkit-box;/*background: #000;*/}
+/*.app .guest-list{display: none}*/
 .app .pages{display: none}
 .app .u-guideTop{display: none}
+.app .voice-cont{display: none;}
 .app.ready .app-loading{display: none}
+/*.app.ready .guest-list{display: block}*/
+.app.ready .voice-cont{display: block}
 .app.ready .bg{display: block}
 .app.ready .pages{display: block}
 .app.ready .u-guideTop{display: block}
@@ -84,17 +93,73 @@ height: 180px;}
 }
 
 
+.game-container{width: 100%;height:100%;position: absolute;top:0px;left:0px;}
+.game-container.shake{
+-webkit-animation:shake 1s .2s ease both;}
+@-webkit-keyframes shake{
+0%,100%{-webkit-transform:translateX(0);}
+10%,30%,50%,70%, 90%{-webkit-transform:translateX(-10px);}
+20%,40%,60%,80%{-webkit-transform:translateX(10px);}
+}
+
+.game-container canvas{width: 100%;height:100%;position: absolute;left:0px;top:0px;opacity: 0;-webkit-transition:all .5s;}
+.game-container canvas.show{opacity: 1;}
+.game-container .game-point{width: 36px;height:36px;background-color: #295093;border-radius: 20px;position: absolute;display: block;z-index: 2;margin-top:-19px;margin-left:-19px;border:#3e6ebb 2px solid;-webkit-transform:scale(0);-webkit-transition:all .5s;}
+.game-container .game-point.show{-webkit-transform:scale(1);/*-webkit-animation: scale .5s ;-webkit-animation-fill-mode:both;*/}
+@-webkit-keyframes scale {
+  0% {
+    -webkit-transform: scale(0);
+
+  }
+  
+  70%{
+    -webkit-transform:  scale(1.1);
+
+  }
+  100%{
+    -webkit-transform:  scale(1);
+  }
+}
+.game-container .game-point.on{-webkit-transition:all .5s;background: #fff;border:#fff 1px solid;}
+
+
+.loading-bubbles {
+  margin: auto;
+}
+.loading-bubbles .bubble-container {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+}
+.loading-bubbles .bubble-container .bubble {
+  border-radius: 50%;
+  background-color: #bbbcc8;
+  width: 100%;
+  height: 100%;
+  transform-origin: 50% 50%;
+  -webkit-animation: bubble 1.2s -0.6s infinite ease-out;
+}
+.loading-bubbles .bubble-container:nth-of-type(2n) .bubble {
+  -webkit-animation-delay: -0.3s;
+}
+.loading-bubbles .bubble-container:nth-of-type(3n) .bubble {
+  -webkit-animation-delay: 0s;
+}
+@-webkit-keyframes bubble {
+  0%, 100% {
+     -webkit-transform: scale(0);
+  }
+  50% {
+     -webkit-transform: scale(1);
+  }
+}
 
 
 
 
 
-
-
-
-
-
-.surface {
+/*.surface {
   margin: -3em;
   width: 6em;
   height: 6em;
@@ -8578,4 +8643,4 @@ height: 180px;}
   to {
     transform: rotateX(50deg) rotate(360deg);
   }
-}
+}*/
