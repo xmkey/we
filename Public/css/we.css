@@ -2,6 +2,7 @@
 html,body{overflow:hidden;position:relative;}
 a{-webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-tap-highlight-color: transparent; }
 .page-content{height:100%;}
+.page-game{overflow: visible;}
 .hide{
 	display:none;
 }
@@ -47,14 +48,16 @@ a{-webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-tap-highlight-color: transp
 .font-19{height:11px;background-position:0 -649px;top:84%;}
 .font-20{height:11px;background-position:0 -661px;top:88%;}
 
-.font-empty{background:0;top:5%;height:15px;}
-.font-empty .timebox{text-indent:0;position:absolute;left:50px;color:#e59b11;font-size:19px;line-height:13px;font-family:"MicroSoft YaHei";}
+.font-empty{background:0;top:20px;height:20px;}
+.font-empty .timebox{text-indent:0;position:absolute;left:0px;color:#3dbdff;font-size:19px;line-height:20px;}
+.font-empty .timebox .time-doing{margin-left:7px;}
 .font-21{width:42px;height:15px;background-position:0 -673px;left:0;margin:0;}
-.font-22{width:132px;height:15px;background-position:-44px -673px;left:auto;right:0;margin:0;}
+.font-22{width:132px;height:15px;background-position:-44px -673px;left:auto;right:0;margin:0;top:4px;}
+.font-22 span{width: 100%;height:100%;padding:20px;content:"";display: block;position: absolute;left:-20px;top:-20px;}
 .font-23{height:15px;background-position:0 -689px;bottom:40px;}
 
 
-.we-funcs{position:absolute;top:10%;left:0;right:0;}
+.we-funcs{position:absolute;top:60px;left:0;right:0;}
 .we-funcs.funcs2{width: 300px;top:26%;left:50%;margin-left:-150px;height:300px;}
 
 .we-func{position:absolute;background:url(../img/we_sprite2@2x.png) no-repeat;background-size:311px 74px; width:74px;height:74px;left:50%;top:0;}
@@ -65,7 +68,7 @@ a{-webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-tap-highlight-color: transp
 .logo-e.on{background-position:-237px 0;}
 
 /* S 提交分享页 */
-.result-title{color:#e69c11;font-size:30px;position:absolute;top:10%;left:0;right:0;font-weight:100;margin:0;}
+.result-title{color:#e69c11;font-size:30px;position:absolute;top:10%;left:0;right:0;margin:0;text-indent: 32px;}
 .font-24{height:17px;background-position:0 -705px;top:20%;}
 .font-25{height:10px;background-position:0 -723px;top:30%;}
 .font-26{width:30px;height:15px;background-position:-182px -673px;top:11px;left:42px;margin:0;}
@@ -380,9 +383,13 @@ a{-webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-tap-highlight-color: transp
     right: 0;
     bottom: 0;
     background-color: rgba(0,0,0,.7);
-    opacity: 0;
+    /*opacity: 0;*/
     -webkit-transition: all .5s;
-    z-index: 9999
+    z-index: 9999;
+    display:none;
+}
+.u-maskLayer.show{
+    display: block;
 }
 .u-maskLayer img{
 	width:100%;height:auto;
@@ -429,7 +436,10 @@ a{-webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-tap-highlight-color: transp
 .u-maskLayer.z-show .u-maskLayer-close {
     -webkit-transform: translate(0%,0)
 }
-
+.skip-game{background-position: 2000px;}
+.skip-game.show{background-position: 0 -689px;}
+.skip-game span{width: 100px;height:40px;display: block;position: absolute;right:-10px;top:-10px;display: none;}
+.skip-game.show span{display: block;}
 @media screen and (max-height: 450px) {
     .guest-title{top:12px;}
 

@@ -1,41 +1,61 @@
 
+
 !function($){
+ var sharedata={
 
-var imgUrl = window.location.protocol+"//"+window.location.hostname+PUBLIC+'/img/share.jpg'; 
+  imgUrl : window.location.protocol+"//"+window.location.hostname+PUBLIC+'/img/share.jpg',
 
-var lineLink =window.location.protocol+"//"+window.location.host+window.location.pathname;
-// console.log(imgUrl)
-// console.log(lineLink)
-var descContent = "11月8日北京北展剧场";  
-var shareTitle = '2014腾讯WE大会 连接未来 改变世界';  
-var appid = 'wxc9937e3a66af6dc8';  
+  lineLink : window.location.protocol+"//"+window.location.host+window.location.pathname,
+
+  descContent : "11月8日北京北展剧场",
+  shareTitle : '2014腾讯WE大会 连接未来 改变世界',
+  appid : 'wxc9937e3a66af6dc8'
+}
+
   
-function shareFriend() {  
-
+function shareFriend() { 
+  var curindex=$(".pages .page").index($(".page.current"));
+  var gameindex=$(".pages .page").index($(".page-game"));
+  sharedata.descContent="11月8日北京北展剧场";
+  if(curindex==gameindex&&window.gamedata.time.time){
+    sharedata.descContent="我在we大会使用"+window.gamedata.time.time+"秒连线获得了抽取门票的资格，你也来试试！";
+  }
     WeixinJSBridge.invoke('sendAppMessage',{  
-      "img_url": imgUrl,  
+      "img_url": sharedata.imgUrl,  
       "img_width": "640",  
       "img_height": "640",  
-      "link": lineLink,  
-      "desc": descContent,  
-      "title": shareTitle  
+      "link": sharedata.lineLink,  
+      "desc": sharedata.descContent,  
+      "title": sharedata.shareTitle  
       }, function(res) {  
       _report('send_msg', res.err_msg);  
       })  
 }
-function shareTimeline() {  
+function shareTimeline() { 
+  var curindex=$(".pages .page").index($(".page.current"));
+  var gameindex=$(".pages .page").index($(".page-game"));
+  sharedata.descContent="11月8日北京北展剧场";
+  if(curindex==gameindex&&window.gamedata.time.time){
+    sharedata.descContent="我在we大会使用"+window.gamedata.time.time+"秒连线获得了抽取门票的资格，你也来试试！";
+  }
     WeixinJSBridge.invoke('shareTimeline',{  
-    "img_url": imgUrl,  
+    "img_url": sharedata.imgUrl,  
     "img_width": "640",  
     "img_height": "640",  
-    "link": lineLink,  
-    "desc": descContent,  
-    "title": shareTitle  
+    "link": sharedata.lineLink,  
+    "desc": sharedata.descContent,  
+    "title": sharedata.shareTitle  
     }, function(res) {  
     _report('timeline', res.err_msg);  
     });  
 }  
 function is_weixn(){  
+  var curindex=$(".pages .page").index($(".page.current"));
+  var gameindex=$(".pages .page").index($(".page-game"));
+  sharedata.descContent="11月8日北京北展剧场";
+  if(curindex==gameindex&&window.gamedata.time){
+    sharedata.descContent="我在we大会使用"+window.gamedata.time+"秒连线获得了抽取门票的资格，你也来试试！";
+  }
     var ua = navigator.userAgent.toLowerCase();  
     if(ua.match(/MicroMessenger/i)=="micromessenger") {  
         return true;  

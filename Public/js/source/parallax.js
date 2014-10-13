@@ -164,8 +164,10 @@ if (typeof Zepto === 'undefined') { throw new Error('Parallax.js\'s script requi
     // ==============================
 
     function onStart(e) {
+
         movePrevent=window.movePrevent;
         // console.log(movePrevent)
+
         if (movePrevent === true) {
             event.preventDefault();
             return false;
@@ -204,6 +206,7 @@ if (typeof Zepto === 'undefined') { throw new Error('Parallax.js\'s script requi
 
     function onMove(e) {
         movePrevent=window.movePrevent;
+
         if(movePrevent!==true){
             if(movePrevent === true || touchDown === false){
                 event.preventDefault();
@@ -534,16 +537,26 @@ if (typeof Zepto === 'undefined') { throw new Error('Parallax.js\'s script requi
 
     $(document)
         .on('touchstart', '.page', function(e) {
-            onStart(e.changedTouches[0]);
+
+            if(!$(e.target).parent().hasClass("game-container")){
+                 
+                onStart(e.changedTouches[0]);
+            }
         })
         .on('touchmove', '.page', function(e) {
+            if(!$(e.target).parent().hasClass("game-container")){
+              
             onMove(e.changedTouches[0]);
+            }
         })
         .on('touchend', '.page', function(e) {
-            onEnd(e.changedTouches[0]);
+            if(!$(e.target).parent().hasClass("game-container")){
+                
+                onEnd(e.changedTouches[0]);
+            }
         })
         .on('webkitAnimationEnd webkitTransitionEnd', '.pages', function() {
-            curPage=window.curPage;
+            // curPage=window.curPage;
 
 			if (direction !== 'stay') {
                
@@ -557,6 +570,7 @@ if (typeof Zepto === 'undefined') { throw new Error('Parallax.js\'s script requi
 	            options.onchange(curPage, $pageArr[curPage], direction);  // 执行回调函数
 	            animShow();
 			}
+            
             
         });
 

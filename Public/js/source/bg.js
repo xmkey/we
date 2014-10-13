@@ -38,6 +38,9 @@
 var oldX=0;
 var oldY=0;
 function deviceMotionHandler(eventData){
+  var curindex=$(".pages .page").index($(".page.current"));
+  var gameindex=$(".pages .page").index($(".page-game"));
+  if(curindex!=gameindex){
 
     var acceleration = eventData.accelerationIncludingGravity; 
     var x=Math.round(acceleration.x)*3;
@@ -51,6 +54,7 @@ function deviceMotionHandler(eventData){
         oldX=x;
         oldY=y;
     }
+  }
 }
 if (window.DeviceMotionEvent) { 
     window.addEventListener('devicemotion',deviceMotionHandler, false); 
@@ -319,7 +323,7 @@ var url=document.location.href;
 var flag=true;
 var test=true;
 var n=parseInt((url.indexOf('n=')!=-1)?url.substring(url.indexOf('n=')+2,((url.substring(url.indexOf('n=')+2,url.length)).indexOf('&')!=-1)?url.indexOf('n=')+2+(url.substring(url.indexOf('n=')+2,url.length)).indexOf('&'):url.length):512);
-var n=200;
+var n=100;
 var w=0;
 var h=0;
 var x=0;
@@ -349,7 +353,7 @@ var key;
 var ctrl;
 
 var timeout;
-var fps=20;
+var fps=30;
 
 function init()
     {
@@ -434,12 +438,19 @@ function resize()
 // start()
 
 window.bg_start=function(){
-  start();
+
+  if((!!$.os.ios&& parseInt($.os.version)<7 )||$.os.android&&parseInt($.os.version)<4){
+   
+  }else{
+     start();
+  }
+  
   // var audio_bg=document.getElementById('audio-bg');
   var audio_bg=new Audio(PUBLIC+"/audio/bg.mp3");
   // console.log(audio_bg)
   isAudioFirst=true;
   if(audio_bg){
+    audio_bg.loop=true;
   audio_bg.play();
   $(document).on("touchstart",function(){
     if(isAudioFirst){

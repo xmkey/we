@@ -12,7 +12,13 @@ class IndexController extends Controller {
 		// $this->assign('urlparam',$urlparam);
         // $type=$_GET["type"];
         // $this->display();
-        $this->display();
+        // echo $_GET("simple");
+        if(isset($_GET["simple"])){
+            $this->display("index2");
+        }else{
+            $this->display();
+        }
+        
     }
     public function data(){
     	
