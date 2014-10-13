@@ -1,6 +1,6 @@
 window.gamedata={};
 !function($){
-	var gameindex=0,
+	var gameindex=1,
  		gamestep="w",
  		city=null,
  		data={},
