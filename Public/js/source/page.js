@@ -30,11 +30,12 @@
   slider =Swipe(document.getElementById('slider'), {
       auto: false,
       callback: function(pos) {
-        
+         $('.pop-dots>.dot').removeClass('on');
+        $('.pop-dots>.dot').eq(pos).addClass('on');
       }
     });
   
-    $('.popback').tap(function(e) {
+    $('.popback,.pop-close').tap(function(e) {
       $('.guest-pop').addClass("hide");
     });
   $(".guest-list li").tap(function(){

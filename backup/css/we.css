@@ -37,14 +37,14 @@ html,body{overflow:hidden;position:relative;}
 .font-11{height:20px;background-position:0 -356px;top:50%;}
 .font-12{height:20px;background-position:0 -378px;top:70%;}
 
-.font-13{height:26px;background-position:0 -539px;top:10%;}
-.font-14{height:26px;background-position:0 -566px;top:17%;}
+.font-13{height:30px;background-position:0 -539px;top:10%;}
+.font-14{height:20px;background-position:0 -572px;top:17%;}
 .font-15{height:14px;background-position:0 -592px;top:35%;}
 .font-16{height:14px;background-position:0 -607px;top:40%;}
 .font-17{height:14px;background-position:0 -622px;top:45%;}
 .font-18{height:11px;background-position:0 -637px;top:80%;}
 .font-19{height:11px;background-position:0 -649px;top:84%;}
-.font-20{height:11px;background-position:0 -661px;top:88%;}
+.font-20{height:18px;background-position:0 -791px;top:88%;}
 
 .font-empty{background:0;top:5%;height:15px;}
 .font-empty .timebox{text-indent:0;position:absolute;left:50px;color:#e59b11;font-size:19px;line-height:13px;font-family:"MicroSoft YaHei";}
