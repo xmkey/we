@@ -194,7 +194,7 @@ a{-webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-tap-highlight-color: transp
 .btn-stargame{width:145px;height:42px;background-position:0 -496px;top:55%;margin-left:-77px;}
 
 .guest-pop{
-	position:absolute;left:0;top:0;bottom:0;right:0;z-index:10000;background-color:rgba(0,0,0,0.9);overflow:hidden;
+	position:absolute;left:0;top:0;bottom:0;right:0;z-index:10000;background-color:rgba(0,0,0,0.8);overflow:hidden;
 }
 .guest-pop.hide{-webkit-transform:translateX(100%);display: block;}
 .guest-pop ul{
