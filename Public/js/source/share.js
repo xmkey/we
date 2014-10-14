@@ -20,6 +20,11 @@ function shareFriend() {
   if(curindex==gameindex&&window.gamedata.time.time){
     sharedata.descContent="我在we大会使用"+window.gamedata.time.time+"秒连线获得了抽取门票的资格，你也来试试！";
   }
+ 
+  if(ISGAME){
+    sharedata.descContent="10月14日至15日，20张免费门票限时抢";
+    sharedata.shareTitle="腾讯大学邀你免费参加WE大会";
+  }
     WeixinJSBridge.invoke('sendAppMessage',{  
       "img_url": sharedata.imgUrl,  
       "img_width": "640",  
@@ -37,6 +42,10 @@ function shareTimeline() {
   sharedata.descContent="11月8日北京北展剧场";
   if(curindex==gameindex&&window.gamedata.time.time){
     sharedata.descContent="我在we大会使用"+window.gamedata.time.time+"秒连线获得了抽取门票的资格，你也来试试！";
+  }
+  if(ISGAME){
+    sharedata.descContent="10月14日至15日，20张免费门票限时抢";
+    sharedata.shareTitle="腾讯大学邀你免费参加WE大会，20张免费门票限时抢";
   }
     WeixinJSBridge.invoke('shareTimeline',{  
     "img_url": sharedata.imgUrl,  

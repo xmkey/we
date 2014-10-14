@@ -54,7 +54,7 @@ a{-webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-tap-highlight-color: transp
 .font-21{width:42px;height:15px;background-position:0 -673px;left:0;margin:0;}
 .font-22{width:132px;height:15px;background-position:-44px -673px;left:auto;right:0;margin:0;top:4px;}
 .font-22 span{width: 100%;height:100%;padding:20px;content:"";display: block;position: absolute;left:-20px;top:-20px;}
-.font-23{height:15px;background-position:0 -689px;bottom:40px;}
+.font-23{height:15px;background-position:0 -689px;bottom:60px;}
 
 
 .we-funcs{position:absolute;top:60px;left:0;right:0;}
@@ -88,7 +88,6 @@ a{-webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-tap-highlight-color: transp
 
 .font-30{height:11px;background-position:0 -755px;bottom:6%;margin-bottom:20px;}
 .font-31{height:11px;background-position:0 -767px;bottom:6%;display: block;z-index: 9;}
-.font-110{height:11px;background-position:-11px -661px;bottom:6%;margin-bottom:40px;display: block;z-index: 9;}
 
 
 .icon-hand{width:31px;height:31px;background-position:-214px -422px;-webkit-animation: hand 1s infinite ease-in-out;}
@@ -169,7 +168,6 @@ a{-webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-tap-highlight-color: transp
 }
 .clock-01{top:33%;}
 .clock-02{top:53%;}
-.clock-03{display:block!important;top:52%;margin-top:-50px;}
 
 
 .guest-title{height:20px;background-position:0 -400px;top:25px;}
@@ -443,7 +441,6 @@ a{-webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-tap-highlight-color: transp
 .skip-game span{width: 100px;height:40px;display: block;position: absolute;right:-10px;top:-10px;display: none;}
 .skip-game.show span{display: block;}
 
-
 .pop-logo,
 .pop-font,
 .pop-btn{
@@ -458,10 +455,10 @@ a{-webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-tap-highlight-color: transp
 .pop-font-01{height:25px;background-position:0 -60px;top:18%;}
 .pop-font-02{height:25px;background-position:0 -86px;top:18%;margin-top:37px;}
 .pop-font-03{height:14px;background-position:0 -112px;top:35%;}
-.pop-font-04{height:14px;background-position:0 -128px;top:52%;}
-.pop-font-05{height:20px;background-position:0 -143px;top:52%;margin-top:30px;}
-.pop-font-06{height:15px;background-position:0 -158px;top:52%;margin-top:60px;}
-.pop-font-07{height:15px;background-position:0 -174px;top:52%;}
+.pop-font-04{height:14px;background-position:0 -127px;top:35%;margin-top:20px;}
+.pop-font-05{height:15px;background-position:0 -142px;top:52%;}
+.pop-font-06{height:15px;background-position:0 -158px;top:52%;margin-top:30px;}
+.pop-font-07{height:15px;background-position:0 -174px;top:52%;margin-top:60px;}
 .pop-font-08{height:15px;background-position:0 -190px;top:74%;}
 .pop-font-09{height:15px;background-position:0 -206px;top:74%;margin-top:30px;}
 
@@ -469,7 +466,7 @@ a{-webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-tap-highlight-color: transp
     height:100%;
     overflow:hidden;
     -webkit-box-sizing:border-box;
-    padding:20px 15px;
+    padding:35px 10px;
 }
 .pop-guest-list .list-item{
     float:left;width:33.3%;height:25%;

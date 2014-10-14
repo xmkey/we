@@ -14,11 +14,12 @@
 <script type="text/javascript" src="http://tajs.qq.com/stats?sId=37756207" charset="UTF-8"></script>
 <meta name="sharecontent" data-msg-img="http://www.liveapp.cn/userfiles/video/tmp/14586/541bf5545a226.jpg" data-msg-title="WE大会" data-msg-content="这里没有商业或者公司竞争,只有前沿的科学思想和最新技术，还有天马行空般的想象力。" data-msg-callBack="" data-line-img="http://www.liveapp.cn/userfiles/video/tmp/14586/541bf55b2dab0.jpg" data-line-title="WE大会" data-line-callBack=""/> 
 <script type="text/javascript">
-  var PUBLIC="/personal/xmkey/we/Public";
-  var ROOT="/personal/xmkey/we";
-  var APP="/personal/xmkey/we/index.php";
+  var PUBLIC="/we/Public";
+  var ROOT="/we";
+  var APP="/we/index.php";
+  var ISGAME=true;
 </script>  
-<link rel="stylesheet" href="/personal/xmkey/we/Public/css/main.css?3">
+<link rel="stylesheet" href="/we/Public/css/main.css?3">
   
 
 </head>
@@ -73,12 +74,12 @@
     <section class="page-content">
       <h3 class="we-font guest-title" data-animation="fadeInToBottom" data-duration="1000">为未来而来的他们</h3>
       <ul class="guest-list">
-        <li class="list-item" data-animation="slideToRight" data-delay="200" data-duration="400"><span class="item-img"><img data-src="/personal/xmkey/we/Public/pic/guest_img_01.jpg" alt="Martin Nowak"></span><span class="item-name">Martin Nowak</span></li>
-        <li class="list-item" data-animation="slideToLeft" data-delay="200" data-duration="400"><span class="item-img"><img data-src="/personal/xmkey/we/Public/pic/guest_img_02.jpg" alt="Bob Richards"></span><span class="item-name">Bob Richards</span></li>
-        <li class="list-item" data-animation="slideToRight" data-delay="400" data-duration="600"><span class="item-img"><img data-src="/personal/xmkey/we/Public/pic/guest_img_03.jpg" alt="David Wallerstein"></span><span class="item-name">David Wallerstein</span></li>
-        <li class="list-item" data-animation="slideToLeft" data-delay="400" data-duration="600"><span class="item-img"><img data-src="/personal/xmkey/we/Public/pic/guest_img_04.jpg" alt="Jose Carmena"></span><span class="item-name">Jose Carmena</span></li>
-        <li class="list-item" data-animation="slideToRight" data-delay="600" data-duration="800"><span class="item-img"><img data-src="/personal/xmkey/we/Public/pic/guest_img_05.jpg" alt="Jane Poynter"></span><span class="item-name">Jane Poynter</span></li>
-        <li class="list-item" data-animation="slideToLeft" data-delay="600" data-duration="800"><span class="item-img"><img data-src="/personal/xmkey/we/Public/pic/guest_img_06.jpg" alt="Daniel Leithinger"></span><span class="item-name">Daniel Leithinger</span></li>
+        <li class="list-item" data-animation="slideToRight" data-delay="200" data-duration="400"><span class="item-img"><img data-src="/we/Public/pic/guest_img_01.jpg" alt="Martin Nowak"></span><span class="item-name">Martin Nowak</span></li>
+        <li class="list-item" data-animation="slideToLeft" data-delay="200" data-duration="400"><span class="item-img"><img data-src="/we/Public/pic/guest_img_02.jpg" alt="Bob Richards"></span><span class="item-name">Bob Richards</span></li>
+        <li class="list-item" data-animation="slideToRight" data-delay="400" data-duration="600"><span class="item-img"><img data-src="/we/Public/pic/guest_img_03.jpg" alt="David Wallerstein"></span><span class="item-name">David Wallerstein</span></li>
+        <li class="list-item" data-animation="slideToLeft" data-delay="400" data-duration="600"><span class="item-img"><img data-src="/we/Public/pic/guest_img_04.jpg" alt="Jose Carmena"></span><span class="item-name">Jose Carmena</span></li>
+        <li class="list-item" data-animation="slideToRight" data-delay="600" data-duration="800"><span class="item-img"><img data-src="/we/Public/pic/guest_img_05.jpg" alt="Jane Poynter"></span><span class="item-name">Jane Poynter</span></li>
+        <li class="list-item" data-animation="slideToLeft" data-delay="600" data-duration="800"><span class="item-img"><img data-src="/we/Public/pic/guest_img_06.jpg" alt="Daniel Leithinger"></span><span class="item-name">Daniel Leithinger</span></li>
       </ul>
     </section>
   </section>
@@ -86,12 +87,12 @@
     <section class="page-content">
       <h3 class="we-font guest-title" data-animation="fadeInToBottom" data-duration="1000">为未来而来的他们</h3>
       <ul class="guest-list">
-        <li class="list-item" data-animation="slideToRight" data-delay="200" data-duration="400"><span class="item-img"><img data-src="/personal/xmkey/we/Public/pic/guest_img_07.jpg" alt="苏运升"></span><span class="item-name">苏运升</span></li>
-        <li class="list-item" data-animation="slideToLeft" data-delay="200" data-duration="400"><span class="item-img"><img data-src="/personal/xmkey/we/Public/pic/guest_img_08.jpg" alt="王俊"></span><span class="item-name">王俊</span></li>
-        <li class="list-item" data-animation="slideToRight" data-delay="400" data-duration="600"><span class="item-img"><img data-src="/personal/xmkey/we/Public/pic/guest_img_09.jpg" alt="Rajinder Sodhi"></span><span class="item-name">Rajinder Sodhi</span></li>
-        <li class="list-item" data-animation="slideToLeft" data-delay="400" data-duration="600"><span class="item-img"><img data-src="/personal/xmkey/we/Public/pic/guest_img_10.jpg" alt="Ben Waber"></span><span class="item-name">Ben Waber</span></li>
-        <li class="list-item" data-animation="slideToRight" data-delay="600" data-duration="800"><span class="item-img"><img data-src="/personal/xmkey/we/Public/pic/guest_img_11.jpg" alt="王阳"></span><span class="item-name">王阳</span></li>
-        <li class="list-item" data-animation="slideToLeft" data-delay="600" data-duration="800"><span class="item-img"><img data-src="/personal/xmkey/we/Public/pic/guest_img_12.jpg" alt="Tomonori Kagaya"></span><span class="item-name">Tomonori Kagaya</span></li>
+        <li class="list-item" data-animation="slideToRight" data-delay="200" data-duration="400"><span class="item-img"><img data-src="/we/Public/pic/guest_img_07.jpg" alt="苏运升"></span><span class="item-name">苏运升</span></li>
+        <li class="list-item" data-animation="slideToLeft" data-delay="200" data-duration="400"><span class="item-img"><img data-src="/we/Public/pic/guest_img_08.jpg" alt="王俊"></span><span class="item-name">王俊</span></li>
+        <li class="list-item" data-animation="slideToRight" data-delay="400" data-duration="600"><span class="item-img"><img data-src="/we/Public/pic/guest_img_09.jpg" alt="Rajinder Sodhi"></span><span class="item-name">Rajinder Sodhi</span></li>
+        <li class="list-item" data-animation="slideToLeft" data-delay="400" data-duration="600"><span class="item-img"><img data-src="/we/Public/pic/guest_img_10.jpg" alt="Ben Waber"></span><span class="item-name">Ben Waber</span></li>
+        <li class="list-item" data-animation="slideToRight" data-delay="600" data-duration="800"><span class="item-img"><img data-src="/we/Public/pic/guest_img_11.jpg" alt="王阳"></span><span class="item-name">王阳</span></li>
+        <li class="list-item" data-animation="slideToLeft" data-delay="600" data-duration="800"><span class="item-img"><img data-src="/we/Public/pic/guest_img_12.jpg" alt="Tomonori Kagaya"></span><span class="item-name">Tomonori Kagaya</span></li>
       </ul>
     </section>
   </section> -->
@@ -188,18 +189,18 @@
         <li>
           <section class="page-content">
             <ol class="pop-guest-list">
-              <li class="list-item"><span class="item-img"><img data-src="/personal/xmkey/we/Public/pic/guest_img_01.jpg" alt="Martin Nowak"></span><span class="item-name">Martin Nowak</span></li>
-              <li class="list-item"><span class="item-img"><img data-src="/personal/xmkey/we/Public/pic/guest_img_02.jpg" alt="Bob Richards"></span><span class="item-name">Bob Richards</span></li>
-              <li class="list-item"><span class="item-img"><img data-src="/personal/xmkey/we/Public/pic/guest_img_03.jpg" alt="David Wallerstein"></span><span class="item-name">David Wallerstein</span></li>
-              <li class="list-item"><span class="item-img"><img data-src="/personal/xmkey/we/Public/pic/guest_img_04.jpg" alt="Jose Carmena"></span><span class="item-name">Jose Carmena</span></li>
-              <li class="list-item"><span class="item-img"><img data-src="/personal/xmkey/we/Public/pic/guest_img_05.jpg" alt="Jane Poynter"></span><span class="item-name">Jane Poynter</span></li>
-              <li class="list-item"><span class="item-img"><img data-src="/personal/xmkey/we/Public/pic/guest_img_06.jpg" alt="Daniel Leithinger"></span><span class="item-name">Daniel Leithinger</span></li>
-              <li class="list-item"><span class="item-img"><img data-src="/personal/xmkey/we/Public/pic/guest_img_07.jpg" alt="苏运升"></span><span class="item-name">苏运升</span></li>
-              <li class="list-item"><span class="item-img"><img data-src="/personal/xmkey/we/Public/pic/guest_img_08.jpg" alt="王俊"></span><span class="item-name">王俊</span></li>
-              <li class="list-item"><span class="item-img"><img data-src="/personal/xmkey/we/Public/pic/guest_img_09.jpg" alt="Rajinder Sodhi"></span><span class="item-name">Rajinder Sodhi</span></li>
-              <li class="list-item"><span class="item-img"><img data-src="/personal/xmkey/we/Public/pic/guest_img_10.jpg" alt="Ben Waber"></span><span class="item-name">Ben Waber</span></li>
-              <li class="list-item"><span class="item-img"><img data-src="/personal/xmkey/we/Public/pic/guest_img_11.jpg" alt="王阳"></span><span class="item-name">王阳</span></li>
-              <li class="list-item"><span class="item-img"><img data-src="/personal/xmkey/we/Public/pic/guest_img_12.jpg" alt="Tomonori Kagaya"></span><span class="item-name">Tomonori Kagaya</span></li>
+              <li class="list-item"><span class="item-img"><img data-src="/we/Public/pic/guest_img_01.jpg" alt="Martin Nowak"></span><span class="item-name">Martin Nowak</span></li>
+              <li class="list-item"><span class="item-img"><img data-src="/we/Public/pic/guest_img_02.jpg" alt="Bob Richards"></span><span class="item-name">Bob Richards</span></li>
+              <li class="list-item"><span class="item-img"><img data-src="/we/Public/pic/guest_img_03.jpg" alt="David Wallerstein"></span><span class="item-name">David Wallerstein</span></li>
+              <li class="list-item"><span class="item-img"><img data-src="/we/Public/pic/guest_img_04.jpg" alt="Jose Carmena"></span><span class="item-name">Jose Carmena</span></li>
+              <li class="list-item"><span class="item-img"><img data-src="/we/Public/pic/guest_img_05.jpg" alt="Jane Poynter"></span><span class="item-name">Jane Poynter</span></li>
+              <li class="list-item"><span class="item-img"><img data-src="/we/Public/pic/guest_img_06.jpg" alt="Daniel Leithinger"></span><span class="item-name">Daniel Leithinger</span></li>
+              <li class="list-item"><span class="item-img"><img data-src="/we/Public/pic/guest_img_07.jpg" alt="苏运升"></span><span class="item-name">苏运升</span></li>
+              <li class="list-item"><span class="item-img"><img data-src="/we/Public/pic/guest_img_08.jpg" alt="王俊"></span><span class="item-name">王俊</span></li>
+              <li class="list-item"><span class="item-img"><img data-src="/we/Public/pic/guest_img_09.jpg" alt="Rajinder Sodhi"></span><span class="item-name">Rajinder Sodhi</span></li>
+              <li class="list-item"><span class="item-img"><img data-src="/we/Public/pic/guest_img_10.jpg" alt="Ben Waber"></span><span class="item-name">Ben Waber</span></li>
+              <li class="list-item"><span class="item-img"><img data-src="/we/Public/pic/guest_img_11.jpg" alt="王阳"></span><span class="item-name">王阳</span></li>
+              <li class="list-item"><span class="item-img"><img data-src="/we/Public/pic/guest_img_12.jpg" alt="Tomonori Kagaya"></span><span class="item-name">Tomonori Kagaya</span></li>
             </ol>
           </section>
         </li>
@@ -212,14 +213,14 @@
   </section>
 </section>
 <div class="u-maskLayer m-weixinShareLayer">
-  <img src="/personal/xmkey/we/Public/img/we_share.png">
+  <img src="/we/Public/img/we_share.png">
   <p class="we-font font-32">合作机构：艾迪票务设计机构：pinnadesign</p>
 </div>
-<!-- <audio src="/personal/xmkey/we/Public/audio/bg.mp3" id="audio-bg" preload="auto" autoplay="autoplay" loop="loop" ></audio> -->
-<!-- <audio src="/personal/xmkey/we/Public/audio/effect1.mp3" id="audio-effect1" preload="auto"></audio> -->
-<script type="text/javascript" src="/personal/xmkey/we/Public/js/zepto.min.js"></script>
+<!-- <audio src="/we/Public/audio/bg.mp3" id="audio-bg" preload="auto" autoplay="autoplay" loop="loop" ></audio> -->
+<!-- <audio src="/we/Public/audio/effect1.mp3" id="audio-effect1" preload="auto"></audio> -->
+<script type="text/javascript" src="/we/Public/js/zepto.min.js"></script>
 
-<script type="text/javascript" src="/personal/xmkey/we/Public/js/main.js"></script>
+<script type="text/javascript" src="/we/Public/js/main.js"></script>
 <script type="text/javascript">
 
   function loadImage(url, callback) {
