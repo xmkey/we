@@ -104,7 +104,7 @@ height: 100%;}
 
 .game-container canvas{width: 100%;height:100%;position: absolute;left:0px;top:0px;opacity: 0;-webkit-transition:all .5s;opacity: 0;-webkit-transform:scale(.7);}
 .game-container canvas.show{opacity: 1;-webkit-transform:scale(1);}
-.game-container .game-point{width: 36px;height:36px;background-color: #295093;border-radius: 20px;position: absolute;display: block;z-index: 2;margin-top:-19px;margin-left:-19px;border:#295093 2px solid;-webkit-transform:scale(0);-webkit-transition:all .5s;}
+.game-container .game-point{width: 36px;height:36px;background-color: #295093;position: absolute;display: block;z-index: 2;margin-top:-19px;margin-left:-19px;-webkit-transition:all .5s;border-radius: 20px;-webkit-transform:scale(0);}
 .game-container .game-point.show{-webkit-transform:scale(1);/*-webkit-animation: scale .5s ;-webkit-animation-fill-mode:both;*/}
 @-webkit-keyframes scale {
   0% {
@@ -120,7 +120,7 @@ height: 100%;}
     -webkit-transform:  scale(1);
   }
 }
-.game-container .game-point.on{-webkit-transition:all .5s;background: #d08800;border:#d08800 1px solid;}
+.game-container .game-point.on{-webkit-transition:all .5s;background: #d08800;}
 .game-container .game-point span{display: block;position: absolute;top:0px;left:0px;width: 100%;height:100%;border-radius: 100%;background: #d08800;-webkit-transform:scale(2);opacity: 0;-webkit-transition:all .5s;}
 .game-container .game-point.on span{-webkit-transform:scale(1);opacity:1;pointer-events:none;}
 .game-container.success_w{-webkit-transform: translate(-40px,-200px) scale(.2);opacity: 0;}

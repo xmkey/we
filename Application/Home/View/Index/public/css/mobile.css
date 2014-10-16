@@ -1,0 +1,252 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,header,hgroup,nav,section,article,aside,footer,figure,figcaption,menu{margin:0;padding:0}
+body{font-family:"Helvetica Neue",Helvetica,STHeiTi,sans-serif;line-height:24px;font-size:14px;color:#333;-webkit-user-select:none;-webkit-text-size-adjust:none;background: #000}table{border-collapse:collapse;border-spacing:0}
+fieldset,img{border:0}
+li{list-style:none}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}
+a{text-decoration:none;color:#fc7100}
+header,nav,section,article,footer,figure,figcaption{display:block}
+::-webkit-scrollbar {
+  border-radius:0px;
+  width: 0px;
+  height: 0px;
+   background: rgba(0,0,0,0);
+}
+::-webkit-scrollbar:hover {
+  background: rgba(0,0,0,0);
+}
+::-webkit-scrollbar-button:start {
+display: none;
+  background: rgba(0,0,0,0);
+}
+
+::-webkit-scrollbar-button:end {
+  display: none;
+    background: rgba(0,0,0,0);
+}
+
+::-webkit-scrollbar-thumb:vertical {
+border-radius:4px;
+cursor: pointer;
+
+ background: rgba(255,255,255,.4)
+}
+::-webkit-scrollbar-thumb:vertical:hover {
+  border-radius:4px;
+  background: rgba(255,255,255,.5)
+}
+body{position: absolute;width:100%;height:100%;}
+.wrapper{width:100%;background: #000;margin:0 auto;position: relative;height:100%;overflow-x: hidden;}
+.page{position: absolute;top:0px;left:0px;width: 100%;display: block;}
+.page .cont{position: relative;z-index: 0;width:100%;}
+.page .bg{width: 100%;height:100%;background: #000;pointer-events:none;}
+.page .fixed-ele{top:0px;left:0px;z-index: 99;}
+.page .fixed{position: fixed;}
+.page .fixed .link{position: absolute;}
+.page .bg img{width: 100%;display: block;min-height:480px;}
+.page .content{position: absolute;top:0px;left:0px;width: 100%;height:100%;z-index: 9;}
+.page .links{width:20%;z-index: 9;position: absolute;top:0px;height:20%;display: block;}
+.page  .link{position: absolute;background: rgba(0,0,255,0);}
+.page .link:active{background: rgba(0,0,0,.5);}
+#page-list-temp{display: none;}
+
+.page  .link.light{-webkit-animation-timing-function: ease-in-out;-webkit-animation-duration: .3s;-webkit-animation-iteration-count: 1;-webkit-animation-delay: 0s;z-index: 2;-webkit-animation-fill-mode: forwards;-webkit-animation-name: light;}
+@-webkit-keyframes light {
+  0% {
+    background: rgba(0,0,255,0);
+  }
+  50% {
+    background: rgba(0,0,255,.7);
+  }
+  100% {
+    background: rgba(0,0,255,0);
+  }
+}
+
+
+.animate-show{-webkit-perspective: 800px;}
+.animate-show .front,.animate-show .back{-webkit-animation-timing-function: ease-in-out;-webkit-animation-duration: .3s;-webkit-animation-iteration-count: 1;-webkit-animation-delay: 0s;z-index: 2;-webkit-animation-fill-mode: forwards;}
+.animate-show .back{z-index: 1;}
+
+.animate-show.ani-slideleft .front {
+  -webkit-animation-name: slideoutleft;
+}
+.animate-show.ani-slideleft .back {
+
+  -webkit-animation-name: slideinright;
+}
+.ani-slideleft .back {
+  -webkit-transform: translateX(100%);
+}
+
+.animate-show.ani-slideright .front {
+
+  -webkit-animation-name: slideoutright;
+}
+.animate-show.ani-slideright .back {
+  -webkit-animation-name: slideinleft;
+}
+.ani-slideright .back {
+  -webkit-transform: translateX(-100%);
+}
+
+
+@-webkit-keyframes slideinleft {
+  from {
+    -webkit-transform: translateX(-100%);
+  }
+  to {
+    -webkit-transform: translateX(0%);
+  }
+}
+@-webkit-keyframes slideinright {
+  from {
+    -webkit-transform: translateX(100%);
+  }
+  to {
+    -webkit-transform: translateX(0%);
+  }
+}
+@-webkit-keyframes slideoutleft {
+  from {
+    -webkit-transform: translateX(0%);
+  }
+  to {
+    -webkit-transform: translateX(-100%);
+  }
+}
+@-webkit-keyframes slideoutright {
+  from {
+    -webkit-transform: translateX(0%);
+  }
+  to {
+    -webkit-transform: translateX(100%);
+  }
+}
+.ani-covertop .front {
+	z-index: 0 !important;
+}
+.ani-covertop .back {
+-webkit-transform:translateY(-100%);
+}
+.animate-show.ani-covertop .back {
+  -webkit-animation-name: coverintop;
+}
+
+.ani-coverbottom .front {
+  z-index: 0 !important;
+}
+.animate-show.ani-coverbottom .back {
+
+  -webkit-animation-name: coverinbottom;
+}.ani-coverbottom .back {
+	-webkit-transform:translateY(100%);
+}
+
+
+@-webkit-keyframes coverintop {
+  from {
+    -webkit-transform: translateY(-100%);
+  }
+  to {
+    -webkit-transform: translateX(0%);
+  }
+}
+@-webkit-keyframes coverinbottom {
+  from {
+    -webkit-transform: translateY(100%);
+  }
+  to {
+    -webkit-transform: translateX(0%);
+  }
+}
+.animate-show.ani-fade .front {
+	-webkit-animation-name: fadeout;
+}
+.animate-show.ani-fade .back {
+
+  -webkit-animation-name: fadein;
+}
+
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.ani-flip .front {
+	-webkit-transform-style: preserve-3d;
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: rotateY(0deg);
+	-webkit-transition:all .3s;
+/*	-webkit-animation-name: flipout;
+*/}
+.ani-flip .back {
+	-webkit-transform-style: preserve-3d;
+	-webkit-backface-visibility: hidden;
+-webkit-transition:all .3s;
+	-webkit-transform: rotateY(-180deg);
+  	/*-webkit-animation-name: flipin;*/
+}
+.animate-show.ani-flip .front {
+	-webkit-transform: rotateY(180deg);
+}
+.animate-show.ani-flip .back {
+	-webkit-transform: rotateY(0deg);
+	
+}
+
+@-webkit-keyframes flipin {
+  from {
+    -webkit-transform: rotateY(-180deg);
+  }
+  to {
+    -webkit-transform: rotateY(0deg);
+  }
+}
+@-webkit-keyframes flipout {
+  from {
+    -webkit-transform: rotateY(0deg);
+  }
+  to {
+    -webkit-transform: rotateY(180deg);
+  }
+}
+
+.ani-static .front {
+	-webkit-animation-duration: 1ms;
+	-webkit-animation-name: staticout;
+}
+.ani-static .back {
+	-webkit-animation-duration: 1ms;
+  -webkit-animation-name: staticin;
+}
+
+
+@-webkit-keyframes staticin {
+  from {
+    z-index: 1;
+  }
+  to {
+    z-index: 2;
+  }
+}
+@-webkit-keyframes flipout {
+  from {
+    z-index: 1;
+  }
+  to {
+   z-index: 2;
+  }
+}

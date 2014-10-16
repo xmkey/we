@@ -14,6 +14,7 @@
   var PUBLIC="/we/Public";
   var ROOT="/we";
   var APP="/we/index.php";
+  var ISGAME=false;
 </script>  
 <link rel="stylesheet" href="/we/Public/css/main.css">
 

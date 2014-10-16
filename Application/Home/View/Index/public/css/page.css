@@ -1,0 +1,8 @@
+.page{width: 100%;}
+.page .bg{width: 100%;display:-webkit-box;-webkit-box-orient: horizontal;-webkit-box-pack: center;-webkit-box-align: center;background: #000;pointer-events:none;}
+.page .bg img{width: 100%;}
+.page .links{position: absolute;top:0px;left:0px;width: 100%;height:100%;z-index: 9;}
+.page .links .link{position: absolute;}
+
+.page .fixeds{top:0px;left:0px;width: 100%;height:0%;z-index: 10;}
+.page .fixeds .fixed{position: absolute;}

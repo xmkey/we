@@ -14,6 +14,7 @@
 
   
 function shareFriend() { 
+  
   var curindex=$(".pages .page").index($(".page.current"));
   var gameindex=$(".pages .page").index($(".page-game"));
   sharedata.descContent="11月8日北京北展剧场";
@@ -25,6 +26,7 @@ function shareFriend() {
     sharedata.descContent="10月14日至15日，20张免费门票限时抢";
     sharedata.shareTitle="腾讯大学邀你免费参加WE大会";
   }
+ 
     WeixinJSBridge.invoke('sendAppMessage',{  
       "img_url": sharedata.imgUrl,  
       "img_width": "640",  
@@ -77,9 +79,10 @@ function is_weixn(){
 // 当微信内置浏览器完成内部初始化后会触发WeixinJSBridgeReady事件。  
 document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
       // 发送给好友  
+
   WeixinJSBridge.on('menu:share:appmessage', function(argv){
    
-
+ 
    
         shareFriend();  
   });  

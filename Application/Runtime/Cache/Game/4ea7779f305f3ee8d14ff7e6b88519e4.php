@@ -19,7 +19,7 @@
   var APP="/we/index.php";
   var ISGAME=true;
 </script>  
-<link rel="stylesheet" href="/we/Public/css/main.css?3">
+<link rel="stylesheet" href="/we/Public/css/main.css?34">
   
 
 </head>
@@ -107,8 +107,8 @@
         <div class="we-btn btn-stargame" data-animation="slideToTop" data-delay="600" data-duration="700"></div>
       </div>
       <p class="we-font font-20" data-animation="slideToTop" data-delay="800" data-duration="800" id="jsKnowMore">了解we大会&gt;</p>
-      <p class="we-font font-18" data-animation="slideToTop" data-delay="800" data-duration="1000">小伙伴注意了： </p>
-      <p class="we-font font-19" data-animation="slideToTop" data-delay="800" data-duration="1000">本次we大会免费门票活动，不收取任何手续费等费用</p>
+      <!-- <p class="we-font font-18" data-animation="slideToTop" data-delay="800" data-duration="1000">小伙伴注意了： </p>
+      <p class="we-font font-19" data-animation="slideToTop" data-delay="800" data-duration="1000">本次we大会免费门票活动，不收取任何手续费等费用</p> -->
     </section>
   </section>
   <section class="page page-we-07 page-game" >
