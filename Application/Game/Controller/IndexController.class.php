@@ -6,7 +6,7 @@ class IndexController extends Controller {
     public function index(){
         // echo strtotime("2014-10-14 23:00:00");
         $overtime1=strtotime("2014-10-16 00:00:00");
-        $overtime2=strtotime("2014-10-21 00:00:00");
+        $overtime2=strtotime("2014-10-30 00:00:00");
 
 
         // echo (strtotime("2014-10-14 23:00:00")-time());

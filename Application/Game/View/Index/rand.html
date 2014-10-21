@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+<title>WE大会</title>
+<meta charset="utf-8" />
+<meta name="keywords" content="WE大会" />
+<meta name="description" content="WE大会" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+
+</head>
+
+<body class="app">
+  <h1>获奖</h1>
+  <table>
+    <tr>
+      <!-- <td>userid</td> -->
+      <td>name</td>
+      <td>tel</td>
+      <!-- <td>gametime</td> -->
+      <td>city</td>
+      <td>province</td>
+      <!-- <td>time</td> -->
+    </tr>
+ <foreach name="data" item="vo" >
+    <tr>
+      <!-- <td>{$vo.userid}</td> -->
+      <td>{$vo.name}</td>
+      <td>{$vo.tel}</td>
+      <!-- <td>{$vo.gametime}</td> -->
+      <td>{$vo.city}</td>
+      <td>{$vo.province}</td>
+      <!-- <td>{$vo.time}</td> -->
+    </tr>
+ </foreach>
+ <foreach name="data2" item="vo" >
+    <tr>
+      <!-- <td>{$vo.userid}</td> -->
+      <td>{$vo.name}</td>
+      <td>{$vo.tel}</td>
+      <!-- <td>{$vo.gametime}</td> -->
+      <td>{$vo.city}</td>
+      <td>{$vo.province}</td>
+      <!-- <td>{$vo.time}</td> -->
+    </tr>
+ </foreach>
+ </table>
+
+
+ <h1>全部名单</h1>
+  <table>
+    <tr>
+      <!-- <td>userid</td> -->
+      <td>name</td>
+      <td>tel</td>
+      <!-- <td>gametime</td> -->
+      <td>city</td>
+      <td>province</td>
+      <!-- <td>time</td> -->
+    </tr>
+ <foreach name="data3" item="vo" >
+    <tr>
+      <!-- <td>{$vo.userid}</td> -->
+      <td>{$vo.name}</td>
+      <td>{$vo.tel}</td>
+      <!-- <td>{$vo.gametime}</td> -->
+      <td>{$vo.city}</td>
+      <td>{$vo.province}</td>
+      <!-- <td>{$vo.time}</td> -->
+    </tr>
+ </foreach>
+ </table>
+</body>
+</html>
